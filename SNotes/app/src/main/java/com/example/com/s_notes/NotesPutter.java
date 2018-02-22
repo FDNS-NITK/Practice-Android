@@ -34,16 +34,17 @@ public class NotesPutter extends AppCompatActivity {
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 MainActivity.notes.set(noteId,String.valueOf(charSequence));
                 MainActivity.arrayAdapter.notifyDataSetChanged();
                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.com.s_notes", Context.MODE_PRIVATE);
                 HashSet<String> set = new HashSet<>(MainActivity.notes);
                 sharedPreferences.edit().putStringSet("notes",set).apply();
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                MainActivity.arrayAdapter.notifyDataSetChanged();
             }
 
             @Override

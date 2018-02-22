@@ -99,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
                         })
                         .setNegativeButton("No", null)
                         .show();
-                return false;
+                arrayAdapter.notifyDataSetChanged();
+                return true;
             }
         });
     }
