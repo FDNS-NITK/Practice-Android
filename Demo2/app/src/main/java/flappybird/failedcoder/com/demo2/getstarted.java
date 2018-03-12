@@ -1,15 +1,19 @@
 package flappybird.failedcoder.com.demo2;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class getstarted extends AppCompatActivity {
+public class getstarted extends Activity {
     private ViewPager Slideviewpager;
     private LinearLayout Dotlayout;
     private Button back;
@@ -20,6 +24,10 @@ public class getstarted extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_getstarted);
         back = findViewById(R.id.back);
         finish = findViewById(R.id.finish);
@@ -34,7 +42,7 @@ public class getstarted extends AppCompatActivity {
     }
 
     public void addDotsIndicater(int position){
-        Dots = new TextView[3];
+        Dots = new TextView[5];
         Dotlayout.removeAllViews();
         for(int i=0;i<Dots.length;i++){
             Dots[i] = new TextView(this);
@@ -59,6 +67,7 @@ public class getstarted extends AppCompatActivity {
             }
         });
 
+
     }
     ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
         @Override
@@ -82,6 +91,14 @@ public class getstarted extends AppCompatActivity {
                 back.setVisibility(View.VISIBLE);
                 finish.setText("Finish");
                 back.setText("Back");
+                finish.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if(finish.getText() == "Finish") {
+                            startActivity(new Intent(getstarted.this, LoginActivity.class));
+                        }
+                    }
+                });
             }else {
                 back.setEnabled(true);
                 finish.setEnabled(true);

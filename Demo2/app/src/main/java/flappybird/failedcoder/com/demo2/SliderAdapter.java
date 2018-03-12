@@ -19,21 +19,27 @@ public class SliderAdapter extends PagerAdapter {
     }
 
     public int [] slide_images = {
-            R.drawable.garam,
+            R.drawable.presentation,
             R.drawable.code,
-            R.drawable.owl
+            R.drawable.group,
+            R.drawable.chick,
+            R.drawable.notebook
     };
 
     public String [] slide_headings = {
-            "Eat",
-            "Sleep",
-            "Code"
+            "What we Provide",
+            "Learn",
+            "FORUM",
+            "Flappy-Bird",
+            "Notes"
     };
 
     public String [] slider_desc= {
-            "Fdgrgerkwbgjfewo iuo iuheotieiuttjhbjh   iueg foifiiu hi hiuer hip jf udshfo eeh f",
-            "dsjhfoui  hr eiojehr erh ehoeiuf efhosdih fih isgfoi sff hosidf hs",
-            "hfo iw iuweho hoiwehoiuh hipewhuipwehpihw"
+            "We are here to provide links and access to free resources available at one place. We will try to provide learning materials for various exams like GATE, CAT, RAILWAYS, and specially for CODING",
+            "Get links of videos, pdfs, website, books and many more things to learn. Get best links to learn coding stuffs also.",
+            "It is a place where you or any one can hold online sessions. For sharing stuffs or for asking doubts.",
+            "A traditional and a simple game to play and to get addicted",
+            "Here you can write important stuffs and save them for future reference"
     };
 
     @Override
