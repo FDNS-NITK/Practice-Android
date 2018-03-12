@@ -22,7 +22,9 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".CardView" />
         <activity android:name=".Home" />
-        <activity android:name=".forum"></activity>
+        <activity android:name=".forum" />
+        <activity android:name=".notes" />
+        <activity android:name=".notesputter"></activity>
     </application>
 
 </manifest>

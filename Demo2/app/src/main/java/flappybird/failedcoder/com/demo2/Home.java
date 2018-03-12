@@ -44,6 +44,10 @@ public class Home extends AppCompatActivity {
             i.putExtra("NAME",username);
             startActivity(i);
         }
+        if(v.getId() == R.id.nnootteess){
+            Intent i = new Intent(Home.this, notes.class);
+            startActivity(i);
+        }
     }
 
     @Override
