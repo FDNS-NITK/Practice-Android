@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "553684845754",
+    "firebase_url": "https://pokemon-7ea26.firebaseio.com",
+    "project_id": "pokemon-7ea26",
+    "storage_bucket": "pokemon-7ea26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553684845754:android:e427ee8c278e3cbf",
+        "android_client_info": {
+          "package_name": "flappybird.failedcoder.com.demo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553684845754-p38auq05kno58im9i0rlt9p2u1al5aa4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAHWhrhJ79FC45kfNHcSZgcUa86ntzmss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
