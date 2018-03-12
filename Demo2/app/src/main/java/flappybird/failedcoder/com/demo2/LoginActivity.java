@@ -104,7 +104,17 @@ public class LoginActivity extends AppCompatActivity {
             if (result.isSuccess()) {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = result.getSignInAccount();
-                firebaseAuthWithGoogle(account);
+                if(account!=null) {
+                    String idet = account.getId() + "";
+                    String displyName = account.getDisplayName() + "";
+                    mGoogleApiClient.clearDefaultAccountAndReconnect();
+
+                    firebaseAuthWithGoogle(account);
+                }
+                else{
+                    Log.e("handleSignInResult","Failed ; "+result.getStatus());
+                }
+
 
             } else {
                 // Google Sign In failed, update UI appropriately

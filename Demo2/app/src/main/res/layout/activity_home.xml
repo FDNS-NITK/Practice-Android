@@ -37,13 +37,13 @@
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundpurple"
                         android:padding="10dp"
-                        android:src="@drawable/ic_monetization_on_black_24dp" />
+                        android:src="@drawable/tutorial" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Banking"
+                        android:text="Tutorials"
                         android:textStyle="bold" />
 
                     <TextView
@@ -51,7 +51,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="check your bank activities"
+                        android:text="Videos, PDF and other Books links available"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -81,7 +81,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Ideas"
+                        android:text="About Us"
                         android:textStyle="bold" />
 
                     <TextView
@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="check your bank activities"
+                        android:text="Here you can know about us"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -120,13 +120,13 @@
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundgreen"
                         android:padding="10dp"
-                        android:src="@drawable/ic_control_point_black_24dp" />
+                        android:src="@drawable/notepa" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Add"
+                        android:text="Notes"
                         android:textStyle="bold" />
 
                     <TextView
@@ -134,7 +134,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="check your bank activities"
+                        android:text="Store important stuffs and notes"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -158,13 +158,13 @@
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundyello"
                         android:padding="10dp"
-                        android:src="@drawable/ic_attach_file_black_24dp" />
+                        android:src="@drawable/chicken" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Banking"
+                        android:text="Flappy Bird"
                         android:textStyle="bold" />
 
                     <TextView
@@ -172,7 +172,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="check your bank activities"
+                        android:text="Play flappy bird to get free from boredom"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -191,7 +191,7 @@
                 android:layout_margin="10dp">
 
                 <LinearLayout
-                    android:id="@+id/Bdisplay5"
+                    android:id="@+id/ffoorruumm"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -203,13 +203,13 @@
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundpurple"
                         android:padding="10dp"
-                        android:src="@drawable/ic_wifi_black_24dp" />
+                        android:src="@drawable/groupp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Wifi"
+                        android:text="Forum"
                         android:textStyle="bold" />
 
                     <TextView
@@ -217,7 +217,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="check your bank activities"
+                        android:text="Make new rooms to discuss among friends"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>

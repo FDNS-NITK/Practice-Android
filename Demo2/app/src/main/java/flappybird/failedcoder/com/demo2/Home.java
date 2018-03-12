@@ -13,17 +13,21 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Home extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    public String username;
     private FirebaseAuth.AuthStateListener mAuthListeneer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         mAuth = FirebaseAuth.getInstance();
+        username = "";
         mAuthListeneer = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser() == null){
                     startActivity(new Intent(Home.this,LoginActivity.class));
+                }else {
+                    username = firebaseAuth.getCurrentUser().getDisplayName();
                 }
             }
         };
@@ -33,6 +37,11 @@ public class Home extends AppCompatActivity {
     public void onButtonClick(View v) {
         if (v.getId() == R.id.Bdisplay1) {
             Intent i = new Intent(Home.this, LoginActivity.class);
+            startActivity(i);
+        }
+        if(v.getId() == R.id.ffoorruumm){
+            Intent i = new Intent(Home.this, forum.class);
+            i.putExtra("NAME",username);
             startActivity(i);
         }
     }
