@@ -24,10 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class notes extends Activity {
-    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    private DatabaseReference databaseReference = firebaseDatabase.getReference();
-    private DatabaseReference listnotes = databaseReference.child("NOTES");
+public class notes extends AppCompatActivity {
     static ArrayList<String> not;
     static ArrayAdapter arrayAdapter;
 
@@ -54,7 +51,7 @@ public class notes extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
-        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.com.s_notes", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("flappybird.failedcoder.com.demo2", Context.MODE_PRIVATE);
         HashSet<String> set = (HashSet<String>) sharedPreferences.getStringSet("not",null);
 
 
@@ -96,9 +93,9 @@ public class notes extends Activity {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 not.remove(ll);
                                 arrayAdapter.notifyDataSetChanged();
-                                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.com.s_notes", Context.MODE_PRIVATE);
+                                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("flappybird.failedcoder.com.demo2", Context.MODE_PRIVATE);
                                 HashSet<String> set = new HashSet<>(notes.not);
-                                sharedPreferences.edit().putStringSet("notes",set).apply();
+                                sharedPreferences.edit().putStringSet("not",set).apply();
                             }
                         })
                         .setNegativeButton("No", null)
@@ -109,10 +106,5 @@ public class notes extends Activity {
         });
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        listnotes.addValueEventListener((ValueEventListener) this);
-    }
 }
 

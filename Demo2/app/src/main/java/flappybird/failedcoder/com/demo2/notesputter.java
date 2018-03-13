@@ -39,9 +39,9 @@ public class notesputter extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 notes.not.set(noteId,String.valueOf(charSequence));
                 notes.arrayAdapter.notifyDataSetChanged();
-                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.com.s_notes", Context.MODE_PRIVATE);
+                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("flappybird.failedcoder.com.demo2", Context.MODE_PRIVATE);
                 HashSet<String> set = new HashSet<>(notes.not);
-                sharedPreferences.edit().putStringSet("notes",set).apply();
+                sharedPreferences.edit().putStringSet("not",set).apply();
                 notes.arrayAdapter.notifyDataSetChanged();
             }
 

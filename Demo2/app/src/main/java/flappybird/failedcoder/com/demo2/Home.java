@@ -66,7 +66,9 @@ public class Home extends AppCompatActivity {
                 mAuth.signOut();
                 break;
             case R.id.about:
-                break;
+                    Intent i = new Intent(Home.this, About.class);
+                    startActivity(i);
+                    break;
         }
 
         return true;
