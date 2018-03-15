@@ -55,11 +55,13 @@ public class ListVie extends AppCompatActivity {
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                    Intent intent = new Intent(ListVie.this,ActivityOne.class);
-                    intent.putExtra("info","This is activity from card item index  "+finalI);
-                    startActivity(intent);
-
+                    if(finalI == 1){
+                        Intent intent = new Intent(ListVie.this,Engineering.class);
+                        startActivity(intent);
+                    }else if(finalI == 2){
+                        Intent intent = new Intent(ListVie.this,CODING.class);
+                        startActivity(intent);
+                    }
                 }
             });
         }

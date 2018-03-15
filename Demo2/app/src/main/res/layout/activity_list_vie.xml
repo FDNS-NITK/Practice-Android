@@ -66,9 +66,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
+                        android:background="@color/about_item_icon_color"
                         android:src="@drawable/gate" />
 
                     <TextView
@@ -76,7 +77,9 @@
                         android:layout_height="wrap_content"
                         android:background="@color/about_item_icon_color"
                         android:text="GATE"
-                        android:textColor="@android:color/black"
+                        android:textAlignment="center"
+                        android:textColor="@color/viewBg"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -105,18 +108,19 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
+                        android:background="@color/about_item_icon_color"
                         android:src="@drawable/engineers" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/about_item_icon_color"
-                        android:text="Family"
+                        android:text="JEE"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/viewBg"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -152,15 +156,16 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_gravity="center_horizontal"
+                        android:background="@color/about_item_icon_color"
                         android:src="@drawable/coding" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/about_item_icon_color"
-                        android:text="Lovely"
+                        android:text="CODING"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/viewBg"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -190,18 +195,19 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
+                        android:background="@color/about_item_icon_color"
                         android:src="@drawable/doctor" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/about_item_icon_color"
-                        android:text="Team"
+                        android:text="MEDICAL"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/viewBg"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -234,18 +240,19 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
+                        android:background="@color/about_item_icon_color"
                         android:src="@drawable/cityscape" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/about_item_icon_color"
-                        android:text="Friends"
+                        android:text="CSAT"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/viewBg"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -275,18 +282,19 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
+                        android:background="@color/about_item_icon_color"
                         android:src="@drawable/train" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/about_item_icon_color"
-                        android:text="Calendars"
+                        android:text="RAILWAY"
                         android:textAlignment="center"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/viewBg"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
