@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize"
         android:icon="@mipmap/ic_launcher"
         android:label="EDU-HELP"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -25,7 +26,12 @@
         <activity android:name=".forum" />
         <activity android:name=".notes" />
         <activity android:name=".notesputter" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".Guuo" />
+        <activity android:name=".start" />
+        <activity android:name=".Result" />
+        <activity android:name=".website" />
+        <activity android:name=".recyclecard"></activity>
     </application>
 
 </manifest>

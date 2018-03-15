@@ -35,8 +35,8 @@ public class Home extends AppCompatActivity {
 
 
     public void onButtonClick(View v) {
-        if (v.getId() == R.id.Bdisplay1) {
-            Intent i = new Intent(Home.this, LoginActivity.class);
+        if (v.getId() == R.id.webs) {
+            Intent i = new Intent(Home.this, recyclecard.class);
             startActivity(i);
         }
         if(v.getId() == R.id.ffoorruumm){
@@ -46,6 +46,10 @@ public class Home extends AppCompatActivity {
         }
         if(v.getId() == R.id.nnootteess){
             Intent i = new Intent(Home.this, notes.class);
+            startActivity(i);
+        }
+        if(v.getId() == R.id.gguuuuoo){
+            Intent i = new Intent(Home.this,Guuo.class);
             startActivity(i);
         }
     }
