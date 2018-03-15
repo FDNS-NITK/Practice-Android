@@ -36,7 +36,7 @@ public class Home extends AppCompatActivity {
 
     public void onButtonClick(View v) {
         if (v.getId() == R.id.webs) {
-            Intent i = new Intent(Home.this, recyclecard.class);
+            Intent i = new Intent(Home.this, ListVie.class);
             startActivity(i);
         }
         if(v.getId() == R.id.ffoorruumm){

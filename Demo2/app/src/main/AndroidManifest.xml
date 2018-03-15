@@ -32,8 +32,11 @@
         <activity android:name=".Result" />
         <activity android:name=".website" />
         <activity android:name=".AlbumsAdapter" />
-        <activity android:name=".recyclecard"
-            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".recyclecard"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".ListVie" />
+        <activity android:name=".ActivityOne"></activity>
     </application>
 
 </manifest>
