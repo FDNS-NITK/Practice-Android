@@ -39,19 +39,21 @@
                 android:layout_centerInParent="true"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/love_music"
-                    android:text="@string/backdrop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAPERS"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/backdrop_title"/>
+                    android:textSize="@dimen/backdrop_title" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/backdrop_subtitle"
+                    android:text="All Kind of stuffs from various resources"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/backdrop_subtitle"/>
+                    android:textSize="@dimen/backdrop_subtitle" />
             </LinearLayout>
         </RelativeLayout>
 

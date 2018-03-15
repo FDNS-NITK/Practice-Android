@@ -21,7 +21,7 @@ import java.util.List;
 
 public class recyclecard extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private AlbumAdapter adapter;
+    private AlbumsAdapter adapter;
     private List<Album> albumList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class recyclecard extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         albumList = new ArrayList<>();
-        adapter = new AlbumAdapter(this, albumList);
+        adapter = new AlbumsAdapter(this, albumList);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -90,46 +90,33 @@ public class recyclecard extends AppCompatActivity {
      */
     private void prepareAlbums() {
         int[] covers = new int[]{
-                R.drawable.change,
-                R.drawable.cityscape,
+                R.drawable.gate,
+                R.drawable.engineers,
                 R.drawable.coding,
                 R.drawable.doctor,
-                R.drawable.engineer,
-                R.drawable.engineers,
-                R.drawable.facebook,
-                R.drawable.gate,
                 R.drawable.train,
-                R.drawable.github,
-                R.drawable.doctor};
+                R.drawable.change,
+                R.drawable.cityscape};
 
-        Album a = new Album("True Romance", 13, covers[0]);
+        Album a = new Album("Gate", 10, covers[0]);
         albumList.add(a);
 
-        a = new Album("Xscpae", 8, covers[1]);
+        a = new Album("JEE", 20, covers[1]);
         albumList.add(a);
 
-        a = new Album("Maroon 5", 11, covers[2]);
+        a = new Album("Coding", 21, covers[2]);
         albumList.add(a);
 
-        a = new Album("Born to Die", 12, covers[3]);
+        a = new Album("Medical", 11, covers[3]);
         albumList.add(a);
 
-        a = new Album("Honeymoon", 14, covers[4]);
+        a = new Album("Railways", 12, covers[4]);
         albumList.add(a);
 
-        a = new Album("I Need a Doctor", 1, covers[5]);
+        a = new Album("CAT", 14, covers[5]);
         albumList.add(a);
 
-        a = new Album("Loud", 11, covers[6]);
-        albumList.add(a);
-
-        a = new Album("Legend", 14, covers[7]);
-        albumList.add(a);
-
-        a = new Album("Hello", 11, covers[8]);
-        albumList.add(a);
-
-        a = new Album("Greatest Hits", 17, covers[9]);
+        a = new Album("CSTM", 1, covers[6]);
         albumList.add(a);
 
         adapter.notifyDataSetChanged();

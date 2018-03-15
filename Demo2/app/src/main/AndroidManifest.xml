@@ -31,7 +31,9 @@
         <activity android:name=".start" />
         <activity android:name=".Result" />
         <activity android:name=".website" />
-        <activity android:name=".recyclecard"></activity>
+        <activity android:name=".AlbumsAdapter" />
+        <activity android:name=".recyclecard"
+            android:theme="@style/NoActionBar"/>
     </application>
 
 </manifest>
