@@ -23,9 +23,6 @@ public class CODING extends AppCompatActivity {
     }
     public void onButtonClick(View v) {
         if (v.getId() == R.id.Bdisplay1) {
-//            Intent i = new Intent(CODING.this, STL.class);
-//            startActivity(i);
-//            view12();
             download();
         } else if (v.getId() == R.id.Bdisplay2) {
             Intent i = new Intent(CODING.this, DATA.class);
@@ -59,7 +56,7 @@ public class CODING extends AppCompatActivity {
             try {
                 startActivity(pdfIntent);
             } catch (ActivityNotFoundException e) {
-                Toast.makeText(CODING.this, "No Application available to view PDF Downloading...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CODING.this, "No Application available to view PDF Downloading Please try again...", Toast.LENGTH_SHORT).show();
             }
     }
 
@@ -68,8 +65,8 @@ public class CODING extends AppCompatActivity {
         @Override
         protected Void doInBackground(String... strings) {
 
-            String fileUrl = strings[0];   // -> http://maven.apache.org/maven-1.x/maven.pdf
-            String fileName = strings[1];  // -> maven.pdf
+            String fileUrl = strings[0];
+            String fileName = strings[1];
             String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
             File folder = new File(extStorageDirectory, "CODING");
             folder.mkdir();

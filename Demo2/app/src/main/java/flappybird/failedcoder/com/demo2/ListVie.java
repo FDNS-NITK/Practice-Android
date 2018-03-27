@@ -61,6 +61,9 @@ public class ListVie extends AppCompatActivity {
                     }else if(finalI == 2){
                         Intent intent = new Intent(ListVie.this,CODING.class);
                         startActivity(intent);
+                    }else if (finalI == 3){
+                        Intent intent = new Intent(ListVie.this,medical.class);
+                        startActivity(intent);
                     }
                 }
             });

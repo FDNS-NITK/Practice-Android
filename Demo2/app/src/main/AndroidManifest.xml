@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flappybird.failedcoder.com.demo2">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize"
@@ -34,7 +36,7 @@
         <activity android:name=".start" />
         <activity android:name=".Result" />
         <activity android:name=".website" />
-        <activity android:name=".AlbumsAdapter"/>
+        <activity android:name=".AlbumsAdapter" />
         <activity
             android:name=".recyclecard"
             android:theme="@style/NoActionBar" />
@@ -51,6 +53,8 @@
         <activity android:name=".QU" />
         <activity android:name=".TR" />
         <activity android:name=".GR" />
+        <activity android:name=".medical" />
+        <activity android:name=".AIIMS"></activity>
     </application>
 
 </manifest>
